@@ -1,2 +1,2 @@
 import './javascripts/index'
-import './stylesheets/main.scss'
+import './stylesheets/main'

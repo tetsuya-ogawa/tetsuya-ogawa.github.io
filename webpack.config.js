@@ -1,3 +1,4 @@
+require('babel-core/register')
 const path = require('path')
 
 module.exports = {
@@ -18,8 +19,16 @@ module.exports = {
           },
           'sass-loader'
         ]
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.scss']
   },
   devServer: {
     contentBase: path.join(__dirname)
