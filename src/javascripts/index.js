@@ -1,3 +1,3 @@
-import './components/index.jsx'
+import './components/wrapper.jsx'
 
 console.log('ok');
