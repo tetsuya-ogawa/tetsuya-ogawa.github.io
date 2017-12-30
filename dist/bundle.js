@@ -19218,7 +19218,31 @@ var Works = exports.Works = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'works' },
-        'works'
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          'Ruby on Rails\u3067\u65B0\u898F\u4E8B\u696D\u7ACB\u3061\u4E0A\u3052\u30FB\u958B\u767A'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          'Ruby on Rails\u3067\u65E2\u5B58\u81EA\u793E\u30B5\u30FC\u30D3\u30B9\u30FB\u53D7\u8A17\u6848\u4EF6\u958B\u767A'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          'PHP\u3067\u53D7\u8A17\u6539\u4FEE\u6848\u4EF6\u306E\u958B\u767A'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          '\u81EA\u793E\u30D7\u30E9\u30A4\u30D9\u30FC\u30C8DMP\u306E\u69CB\u7BC9'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          'etc...'
+        )
       );
     }
   }]);
@@ -19245,6 +19269,9 @@ var Works = exports.Works = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_skill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_skill__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_job_career__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_job_career___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_job_career__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_works__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_works___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_works__);
+
 
 
 
@@ -19294,7 +19321,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0; }\n\n#app {\n  display: flex;\n  justify-content: center; }\n\n.wrapper {\n  max-width: 950px;\n  width: 100%;\n  box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1), -10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  background-color: #ECF3F3; }\n\n#app {\n  display: flex;\n  justify-content: center; }\n\n.wrapper {\n  max-width: 950px;\n  width: 100%;\n  box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1), -10px 0 10px -8px rgba(0, 0, 0, 0.1);\n  background-color: white; }\n", ""]);
 
 // exports
 
@@ -19569,7 +19596,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".profile {\n  margin: 5px 0;\n  display: flex; }\n  .profile--image {\n    flex: 40%; }\n    .profile--image__fit-parent {\n      width: 100%;\n      box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n  .profile--detail {\n    flex: 60%;\n    padding: 0 12px;\n    color: #C6C9C9; }\n  .profile--basic-info {\n    font-weight: bold;\n    font-size: 13px; }\n  .profile--description {\n    font-size: 11px; }\n  @media (min-width: 480px) {\n    .profile--detail {\n      flex: 60%;\n      padding: 0 17px;\n      color: #C6C9C9; }\n    .profile--basic-info {\n      font-weight: bold;\n      font-size: 18px; }\n    .profile--description {\n      font-size: 16px; } }\n  @media (min-width: 768px) {\n    .profile--detail {\n      flex: 60%;\n      padding: 0 20px;\n      color: #C6C9C9; }\n    .profile--basic-info {\n      font-weight: bold;\n      font-size: 22px; }\n    .profile--description {\n      font-size: 20px;\n      line-height: 34px; } }\n", ""]);
+exports.push([module.i, ".profile {\n  margin-top: 10px;\n  margin-bottom: 30px;\n  display: flex; }\n  .profile--image {\n    flex: 40%; }\n    .profile--image__fit-parent {\n      width: 100%;\n      box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n  .profile--detail {\n    flex: 60%;\n    padding: 0 12px;\n    color: #C6C9C9; }\n  .profile--basic-info {\n    font-weight: bold;\n    font-size: 13px; }\n  .profile--description {\n    font-size: 11px; }\n  @media (min-width: 480px) {\n    .profile {\n      margin-bottom: 40px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 17px;\n        color: #C6C9C9; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 18px; }\n      .profile--description {\n        font-size: 16px; } }\n  @media (min-width: 768px) {\n    .profile {\n      margin-bottom: 50px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 20px;\n        color: #C6C9C9; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 22px; }\n      .profile--description {\n        font-size: 20px;\n        line-height: 34px; } }\n", ""]);
 
 // exports
 
@@ -19614,7 +19641,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".skill {\n  margin: 5px 0;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex;\n    padding: 3px 0; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px; } }\n", ""]);
+exports.push([module.i, ".skill {\n  margin-top: 10px;\n  margin-bottom: 30px;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex;\n    padding: 3px 0; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
 
 // exports
 
@@ -19659,7 +19686,52 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".job-career--company {\n  color: #C6C9C9;\n  text-align: center;\n  padding: 3px 0; }\n\n@media (min-width: 480px) {\n  .job-career {\n    font-size: 18px; } }\n\n@media (min-width: 768px) {\n  .job-career {\n    font-size: 25px; } }\n", ""]);
+exports.push([module.i, ".job-career {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .job-career--company {\n    color: #C6C9C9;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .job-career {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .job-career {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(56);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(4)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./works.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./works.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".works {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .works--history {\n    color: #C6C9C9;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .works {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .works {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
 
 // exports
 

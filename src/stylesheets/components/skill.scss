@@ -1,5 +1,6 @@
 .skill {
-  margin: 5px 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
 
@@ -40,9 +41,11 @@
 
   @media (min-width: 480px) {
     font-size: 18px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 768px) {
     font-size: 25px;
+    margin-bottom: 50px;
   }
 }
