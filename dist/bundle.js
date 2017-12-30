@@ -19138,7 +19138,16 @@ var JobCareer = exports.JobCareer = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'job-career' },
-        'jobCareer'
+        _react2.default.createElement(
+          'div',
+          { className: 'job-career--company' },
+          '\u682A\u5F0F\u4F1A\u793E\u30E6\u30CB\u30AD\u30E3\u30B9\u30C8\uFF08Intern\uFF09'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'job-career--company' },
+          'PORT\u682A\u5F0F\u4F1A\u793E'
+        )
       );
     }
   }]);
@@ -19212,6 +19221,9 @@ var Works = exports.Works = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_content___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_content__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_skill__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_skill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_skill__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_job_career__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_job_career___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_job_career__);
+
 
 
 
@@ -19534,7 +19546,52 @@ exports = module.exports = __webpack_require__(4)(undefined);
 
 
 // module
-exports.push([module.i, ".skill {\n  margin: 5px 0;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px; } }\n", ""]);
+exports.push([module.i, ".skill {\n  margin: 5px 0;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex;\n    padding: 3px 0; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(52);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(5)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./job_career.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./job_career.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".job-career--company {\n  color: #C6C9C9;\n  text-align: center;\n  padding: 3px 0; }\n\n@media (min-width: 480px) {\n  .job-career {\n    font-size: 18px; } }\n\n@media (min-width: 768px) {\n  .job-career {\n    font-size: 25px; } }\n", ""]);
 
 // exports
 

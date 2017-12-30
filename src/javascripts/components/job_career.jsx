@@ -5,7 +5,12 @@ export class JobCareer extends React.Component {
   render () {
     return (
       <div className='job-career'>
-        jobCareer
+        <div className='job-career--company'>
+          株式会社ユニキャスト（Intern）
+        </div>
+        <div className='job-career--company'>
+          PORT株式会社
+        </div>
       </div>
     )
   }
