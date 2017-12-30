@@ -1,0 +1,62 @@
+.profile {
+  margin: 5px 0;
+  display: flex;
+
+  &--image {
+    flex: 40%;
+    &__fit-parent {
+      width: 100%;
+      box-shadow: 10px 0 10px -8px rgba(0,0,0,.1);
+    }
+  }
+
+  &--detail {
+    flex: 60%;
+    padding: 0 12px;
+    color: #C6C9C9;
+  }
+
+  &--basic-info {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  &--description {
+    font-size: 11px;
+  }
+
+  @media (min-width: 480px) {
+    &--detail {
+      flex: 60%;
+      padding: 0 17px;
+      color: #C6C9C9;
+    }
+
+    &--basic-info {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &--description {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &--detail {
+      flex: 60%;
+      padding: 0 20px;
+      color: #C6C9C9;
+    }
+
+    &--basic-info {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    &--description {
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+}

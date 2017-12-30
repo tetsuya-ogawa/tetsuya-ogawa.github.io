@@ -316,48 +316,6 @@ if (process.env.NODE_ENV === 'production') {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * 
- */
-
-function makeEmptyFunction(arg) {
-  return function () {
-    return arg;
-  };
-}
-
-/**
- * This function accepts and discards inputs; it has no side effects. This is
- * primarily useful idiomatically for overridable function endpoints which
- * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
- */
-var emptyFunction = function emptyFunction() {};
-
-emptyFunction.thatReturns = makeEmptyFunction;
-emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-emptyFunction.thatReturnsThis = function () {
-  return this;
-};
-emptyFunction.thatReturnsArgument = function (arg) {
-  return arg;
-};
-
-module.exports = emptyFunction;
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -439,7 +397,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -811,6 +769,48 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * 
+ */
+
+function makeEmptyFunction(arg) {
+  return function () {
+    return arg;
+  };
+}
+
+/**
+ * This function accepts and discards inputs; it has no side effects. This is
+ * primarily useful idiomatically for overridable function endpoints which
+ * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+ */
+var emptyFunction = function emptyFunction() {};
+
+emptyFunction.thatReturns = makeEmptyFunction;
+emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+emptyFunction.thatReturnsThis = function () {
+  return this;
+};
+emptyFunction.thatReturnsArgument = function (arg) {
+  return arg;
+};
+
+module.exports = emptyFunction;
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1006,7 +1006,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(3);
+var emptyFunction = __webpack_require__(5);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -1182,7 +1182,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(3);
+var emptyFunction = __webpack_require__(5);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -1524,7 +1524,7 @@ var Wrapper = function (_React$Component) {
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(6),n=__webpack_require__(7),p=__webpack_require__(3),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(6),n=__webpack_require__(7),p=__webpack_require__(5),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -1564,7 +1564,7 @@ var _assign = __webpack_require__(6);
 var emptyObject = __webpack_require__(7);
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(9);
-var emptyFunction = __webpack_require__(3);
+var emptyFunction = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(10);
 
 // TODO: this is special because it gets imported during build.
@@ -2939,7 +2939,7 @@ module.exports = ReactPropTypesSecret;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(11),B=__webpack_require__(6),C=__webpack_require__(3),ba=__webpack_require__(12),da=__webpack_require__(13),ea=__webpack_require__(14),fa=__webpack_require__(15),ia=__webpack_require__(16),D=__webpack_require__(7);
+var aa=__webpack_require__(0),l=__webpack_require__(11),B=__webpack_require__(6),C=__webpack_require__(5),ba=__webpack_require__(12),da=__webpack_require__(13),ea=__webpack_require__(14),fa=__webpack_require__(15),ia=__webpack_require__(16),D=__webpack_require__(7);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -3241,7 +3241,7 @@ var invariant = __webpack_require__(8);
 var warning = __webpack_require__(9);
 var ExecutionEnvironment = __webpack_require__(11);
 var _assign = __webpack_require__(6);
-var emptyFunction = __webpack_require__(3);
+var emptyFunction = __webpack_require__(5);
 var EventListener = __webpack_require__(12);
 var getActiveElement = __webpack_require__(13);
 var shallowEqual = __webpack_require__(14);
@@ -18999,7 +18999,27 @@ var Profile = exports.Profile = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'profile' },
-        'profile'
+        _react2.default.createElement(
+          'div',
+          { className: 'profile--image' },
+          _react2.default.createElement('img', { src: 'public/profile.jpg', className: 'profile--image__fit-parent' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'profile--detail' },
+          _react2.default.createElement(
+            'div',
+            { className: 'profile--basic-info' },
+            '\u5C0F\u5DDD\u5FB9\u4E5F - Ogawa Tetsuya'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'profile--description' },
+            '\u5927\u5B66\u751F\u304B\u3089\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3092\u306F\u3058\u3081\u3001\u5927\u5B66\u8FD1\u304F\u306E\u30D9\u30F3\u30C1\u30E3\u30FC\u4F01\u696D\u3067\u30A4\u30F3\u30BF\u30FC\u30F3\u3092\u59CB\u3081\u307E\u3057\u305F\u3002\u81EA\u5206\u306E\u6280\u8853\u3067\u4EBA\u3005\u304C\u4FBF\u5229\u3060\u306A\u3068\u601D\u3063\u3066\u304F\u308C\u308B\u3053\u3068\u304C\u697D\u3057\u304F\u3066\u4ECA\u3082\u30A8\u30F3\u30B8\u30CB\u30A2\u3092\u3057\u3066\u3044\u307E\u3059\u3002 \u4ECA\u306F\u4E3B\u306BWeb\u30A8\u30F3\u30B8\u30CB\u30A2\u3067\u3059\u304C\u3001\u793E\u5185\u30C4\u30FC\u30EB\u306E\u4F5C\u6210\u3082\u305F\u307E\u306B\u3084\u3063\u3066\u3044\u307E\u3059\u3002',
+            _react2.default.createElement('br', null),
+            '\u8981\u4EF6\u5B9A\u7FA9\u3084\u8A2D\u8A08\u30FB\u898B\u7A4D\u3082\u308A\u7B49\u306E\u4E0A\u6D41\u5DE5\u7A0B\u304B\u3089\u3001\u5B9F\u969B\u306E\u30B3\u30FC\u30C7\u30A3\u30F3\u30B0\u306E\u4E0B\u6D41\u5DE5\u7A0B\u307E\u3067\u7D4C\u9A13\u3057\u3066\u3044\u307E\u3059\u3002\u6700\u8FD1\u306FGoogle Analytics\u3092\u4F7F\u3063\u3066\u30D7\u30ED\u30C0\u30AF\u30C8\u306E\u54C1\u8CEA\u6539\u5584\u3059\u308B\u3053\u3068\u306B\u8208\u5473\u6301\u3063\u3066\u3044\u307E\u3059\u3002'
+          )
+        )
       );
     }
   }]);
@@ -19219,10 +19239,13 @@ var Works = exports.Works = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_item___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_item__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_content__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_content___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_content__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_skill__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_skill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_skill__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_job_career__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_job_career___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_job_career__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_profile__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_profile___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_profile__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_skill__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_skill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_skill__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_job_career__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_job_career___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_job_career__);
+
 
 
 
@@ -19246,7 +19269,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -19266,7 +19289,7 @@ if(false) {
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
@@ -19386,7 +19409,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -19406,7 +19429,7 @@ if(false) {
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
@@ -19431,7 +19454,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -19451,7 +19474,7 @@ if(false) {
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
@@ -19476,7 +19499,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -19496,7 +19519,7 @@ if(false) {
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
@@ -19521,14 +19544,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./skill.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./skill.scss");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./profile.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./profile.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -19541,12 +19564,12 @@ if(false) {
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".skill {\n  margin: 5px 0;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex;\n    padding: 3px 0; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px; } }\n", ""]);
+exports.push([module.i, ".profile {\n  margin: 5px 0;\n  display: flex; }\n  .profile--image {\n    flex: 40%; }\n    .profile--image__fit-parent {\n      width: 100%;\n      box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n  .profile--detail {\n    flex: 60%;\n    padding: 0 12px;\n    color: #C6C9C9; }\n  .profile--basic-info {\n    font-weight: bold;\n    font-size: 13px; }\n  .profile--description {\n    font-size: 11px; }\n  @media (min-width: 480px) {\n    .profile--detail {\n      flex: 60%;\n      padding: 0 17px;\n      color: #C6C9C9; }\n    .profile--basic-info {\n      font-weight: bold;\n      font-size: 18px; }\n    .profile--description {\n      font-size: 16px; } }\n  @media (min-width: 768px) {\n    .profile--detail {\n      flex: 60%;\n      padding: 0 20px;\n      color: #C6C9C9; }\n    .profile--basic-info {\n      font-weight: bold;\n      font-size: 22px; }\n    .profile--description {\n      font-size: 20px;\n      line-height: 34px; } }\n", ""]);
 
 // exports
 
@@ -19566,7 +19589,52 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./skill.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/sass-loader/lib/loader.js!./skill.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".skill {\n  margin: 5px 0;\n  text-align: center;\n  font-weight: bold; }\n  .skill--row {\n    display: flex;\n    padding: 3px 0; }\n  .skill--ruby {\n    flex: 33%;\n    color: #701516; }\n  .skill--python {\n    flex: 33%;\n    color: #3572a5; }\n  .skill--php {\n    flex: 33%;\n    color: #4f5d95; }\n  .skill--html {\n    flex: 33%;\n    color: #e34c26; }\n  .skill--css {\n    flex: 33%;\n    color: #563d7c; }\n  .skill--javascript {\n    flex: 33%;\n    color: #f1e05a; }\n  @media (min-width: 480px) {\n    .skill {\n      font-size: 18px; } }\n  @media (min-width: 768px) {\n    .skill {\n      font-size: 25px; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(54);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -19583,10 +19651,10 @@ if(false) {
 }
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
+exports = module.exports = __webpack_require__(3)(undefined);
 // imports
 
 
