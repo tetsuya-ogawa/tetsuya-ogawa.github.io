@@ -18819,11 +18819,20 @@ var Index = exports.Index = function (_React$Component) {
         { className: 'index' },
         _react2.default.createElement(
           'div',
-          { className: 'index--items' },
-          _react2.default.createElement(_item.Item, { data: 'profile' }),
-          _react2.default.createElement(_item.Item, { data: 'skill' }),
-          _react2.default.createElement(_item.Item, { data: 'job career' }),
-          _react2.default.createElement(_item.Item, { data: 'works' })
+          { className: 'index--content' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'index--caption' },
+            'Tetsuya\'s Portforio'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'index--items' },
+            _react2.default.createElement(_item.Item, { data: 'profile' }),
+            _react2.default.createElement(_item.Item, { data: 'skill' }),
+            _react2.default.createElement(_item.Item, { data: 'job career' }),
+            _react2.default.createElement(_item.Item, { data: 'works' })
+          )
         )
       );
     }
@@ -19461,7 +19470,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".index {\n  width: 100%;\n  background-image: url(\"public/top.jpg\");\n  background-repeat: no-repeat;\n  background-size: 100%;\n  padding: 30% 0 30% 0; }\n  .index--items {\n    display: flex;\n    justify-content: space-around; }\n", ""]);
+exports.push([module.i, ".index {\n  width: 100%;\n  background-image: url(\"public/top.jpg\");\n  background-repeat: no-repeat;\n  background-size: 100%;\n  padding: 17% 0 30% 0; }\n  .index--caption {\n    text-align: center;\n    color: white;\n    font-weight: normal;\n    font-size: 21px; }\n    @media (min-width: 480px) {\n      .index--caption {\n        font-size: 28px; } }\n    @media (min-width: 768px) {\n      .index--caption {\n        font-size: 38px; } }\n  .index--items {\n    display: flex;\n    justify-content: space-around; }\n", ""]);
 
 // exports
 

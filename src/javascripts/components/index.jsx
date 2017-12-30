@@ -6,11 +6,16 @@ export class Index extends React.Component {
   render () {
     return (
       <div className='index'>
-        <div className='index--items'>
-          <Item data={'profile'} />
-          <Item data={'skill'} />
-          <Item data={'job career'} />
-          <Item data={'works'} />
+        <div className='index--content'>
+          <h1 className='index--caption'>
+            Tetsuya's Portforio
+          </h1>
+          <div className='index--items'>
+            <Item data={'profile'} />
+            <Item data={'skill'} />
+            <Item data={'job career'} />
+            <Item data={'works'} />
+          </div>
         </div>
       </div>
     )

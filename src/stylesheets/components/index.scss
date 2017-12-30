@@ -3,7 +3,26 @@
   background-image: url('public/top.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 30% 0 30% 0;
+  padding: 17% 0 30% 0;
+
+  &--content {
+
+  }
+
+  &--caption {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 21px;
+
+    @media (min-width: 480px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 38px;
+    }
+  }
 
   &--items {
     display: flex;
