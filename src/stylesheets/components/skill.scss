@@ -1,0 +1,47 @@
+.skill {
+  margin: 5px 0;
+  text-align: center;
+  font-weight: bold;
+
+  &--row {
+    display: flex;
+  }
+
+  &--ruby {
+    flex: 33%;
+    color: #701516;
+  }
+
+  &--python {
+    flex: 33%;
+    color: #3572a5;
+  }
+
+  &--php {
+    flex: 33%;
+    color: #4f5d95;
+  }
+
+  &--html {
+    flex: 33%;
+    color: #e34c26;
+  }
+
+  &--css {
+    flex: 33%;
+    color: #563d7c;
+  }
+
+  &--javascript {
+    flex: 33%;
+    color: #f1e05a;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+}

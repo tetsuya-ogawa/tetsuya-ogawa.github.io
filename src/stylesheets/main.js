@@ -1,2 +1,5 @@
 import './base'
 import './components/index'
+import './components/item'
+import './components/content'
+import './components/skill'

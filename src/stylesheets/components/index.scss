@@ -3,6 +3,10 @@
   background-image: url('public/top.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 61% 0 0;
-  // height: -webkit-fill-available;
+  padding: 30% 0 30% 0;
+
+  &--items {
+    display: flex;
+    justify-content: space-around;
+  }
 }

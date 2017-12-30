@@ -1,0 +1,12 @@
+.content {
+  &--title {
+    color: #2a2b2c;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+
+    @media (min-width: 480px) {
+      font-size: 25px;
+    }
+  }
+}
