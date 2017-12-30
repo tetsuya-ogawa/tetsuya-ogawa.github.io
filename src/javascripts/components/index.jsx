@@ -8,7 +8,7 @@ export class Index extends React.Component {
       <div className='index'>
         <div className='index--content'>
           <h1 className='index--caption'>
-            Tetsuya's Portforio
+            Tetsuya's Portfolio
           </h1>
           <div className='index--items'>
             <Item data={'profile'} />
