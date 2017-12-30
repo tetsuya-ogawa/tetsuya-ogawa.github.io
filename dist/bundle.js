@@ -18823,7 +18823,7 @@ var Index = exports.Index = function (_React$Component) {
           _react2.default.createElement(
             'h1',
             { className: 'index--caption' },
-            'Tetsuya\'s Portforio'
+            'Tetsuya\'s Portfolio'
           ),
           _react2.default.createElement(
             'div',
