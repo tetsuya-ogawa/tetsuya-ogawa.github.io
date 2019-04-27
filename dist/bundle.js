@@ -19024,9 +19024,7 @@ var Profile = exports.Profile = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'profile--description' },
-            '\u5927\u5B66\u751F\u304B\u3089\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3092\u306F\u3058\u3081\u3001\u5927\u5B66\u8FD1\u304F\u306E\u30D9\u30F3\u30C1\u30E3\u30FC\u4F01\u696D\u3067\u30A4\u30F3\u30BF\u30FC\u30F3\u3092\u59CB\u3081\u307E\u3057\u305F\u3002\u81EA\u5206\u306E\u6280\u8853\u3067\u4EBA\u3005\u304C\u4FBF\u5229\u3060\u306A\u3068\u601D\u3063\u3066\u304F\u308C\u308B\u3053\u3068\u304C\u697D\u3057\u304F\u3066\u4ECA\u3082\u30A8\u30F3\u30B8\u30CB\u30A2\u3092\u3057\u3066\u3044\u307E\u3059\u3002 \u4ECA\u306F\u4E3B\u306BWeb\u30A8\u30F3\u30B8\u30CB\u30A2\u3067\u3059\u304C\u3001\u793E\u5185\u30C4\u30FC\u30EB\u306E\u4F5C\u6210\u3082\u305F\u307E\u306B\u3084\u3063\u3066\u3044\u307E\u3059\u3002',
-            _react2.default.createElement('br', null),
-            '\u8981\u4EF6\u5B9A\u7FA9\u3084\u8A2D\u8A08\u30FB\u898B\u7A4D\u3082\u308A\u7B49\u306E\u4E0A\u6D41\u5DE5\u7A0B\u304B\u3089\u3001\u5B9F\u969B\u306E\u30B3\u30FC\u30C7\u30A3\u30F3\u30B0\u306E\u4E0B\u6D41\u5DE5\u7A0B\u307E\u3067\u7D4C\u9A13\u3057\u3066\u3044\u307E\u3059\u3002\u6700\u8FD1\u306FGoogle Analytics\u3092\u4F7F\u3063\u3066\u30D7\u30ED\u30C0\u30AF\u30C8\u306E\u54C1\u8CEA\u6539\u5584\u3059\u308B\u3053\u3068\u306B\u8208\u5473\u6301\u3063\u3066\u3044\u307E\u3059\u3002'
+            '\u5927\u5B66\u751F\u304B\u3089\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u3092\u306F\u3058\u3081\u3001\u5927\u5B66\u8FD1\u304F\u306E\u30D9\u30F3\u30C1\u30E3\u30FC\u4F01\u696D\u3067\u30A4\u30F3\u30BF\u30FC\u30F3\u3092\u59CB\u3081\u307E\u3057\u305F\u3002\u81EA\u5206\u306E\u6280\u8853\u3067\u4EBA\u3005\u304C\u4FBF\u5229\u3060\u306A\u3068\u601D\u3063\u3066\u304F\u308C\u308B\u3053\u3068\u304C\u697D\u3057\u304F\u3066\u4ECA\u3082\u30A8\u30F3\u30B8\u30CB\u30A2\u3092\u3057\u3066\u3044\u307E\u3059\u3002 \u73FE\u8077\u3067\u306F\u4E3B\u306BWeb\u30A8\u30F3\u30B8\u30CB\u30A2\u3092\u3057\u3064\u3064\u3082\u3001\u4E8B\u696D\u4F01\u753B\u30FB\u904B\u7528\u306A\u3069\u30E1\u30A4\u30F3\u306B\u3084\u3063\u3066\u3044\u307E\u3059\u3002'
           )
         )
       );
@@ -19175,7 +19173,7 @@ var JobCareer = exports.JobCareer = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'job-career--company' },
-          'PORT\u682A\u5F0F\u4F1A\u793E'
+          'Web\u7CFBIT\u30D9\u30F3\u30C1\u30E3\u30FC\u4F01\u696D'
         )
       );
     }
@@ -19227,6 +19225,11 @@ var Works = exports.Works = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'works' },
+        _react2.default.createElement(
+          'div',
+          { className: 'works--history' },
+          '\u65B0\u898F\u4E8B\u696D\u7CFB\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u30DE\u30CD\u30FC\u30B8\u30E3\u30FC'
+        ),
         _react2.default.createElement(
           'div',
           { className: 'works--history' },
@@ -19605,7 +19608,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".profile {\n  margin-top: 10px;\n  margin-bottom: 30px;\n  display: flex; }\n  .profile--image {\n    flex: 40%; }\n    .profile--image__fit-parent {\n      width: 100%;\n      box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n  .profile--detail {\n    flex: 60%;\n    padding: 0 12px;\n    color: #C6C9C9; }\n  .profile--basic-info {\n    font-weight: bold;\n    font-size: 13px; }\n  .profile--description {\n    font-size: 11px; }\n  @media (min-width: 480px) {\n    .profile {\n      margin-bottom: 40px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 17px;\n        color: #C6C9C9; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 18px; }\n      .profile--description {\n        font-size: 16px; } }\n  @media (min-width: 768px) {\n    .profile {\n      margin-bottom: 50px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 20px;\n        color: #C6C9C9; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 22px; }\n      .profile--description {\n        font-size: 20px;\n        line-height: 34px; } }\n", ""]);
+exports.push([module.i, ".profile {\n  margin-top: 10px;\n  margin-bottom: 30px;\n  display: flex; }\n  .profile--image {\n    flex: 40%; }\n    .profile--image__fit-parent {\n      width: 100%;\n      box-shadow: 10px 0 10px -8px rgba(0, 0, 0, 0.1); }\n  .profile--detail {\n    flex: 60%;\n    padding: 0 12px;\n    color: #333; }\n  .profile--basic-info {\n    font-weight: bold;\n    font-size: 13px; }\n  .profile--description {\n    font-size: 11px; }\n  @media (min-width: 480px) {\n    .profile {\n      margin-bottom: 40px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 17px;\n        color: #333; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 18px; }\n      .profile--description {\n        font-size: 16px; } }\n  @media (min-width: 768px) {\n    .profile {\n      margin-bottom: 50px; }\n      .profile--detail {\n        flex: 60%;\n        padding: 0 20px;\n        color: #333; }\n      .profile--basic-info {\n        font-weight: bold;\n        font-size: 22px; }\n      .profile--description {\n        font-size: 20px;\n        line-height: 34px; } }\n", ""]);
 
 // exports
 
@@ -19695,7 +19698,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".job-career {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .job-career--company {\n    color: #C6C9C9;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .job-career {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .job-career {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
+exports.push([module.i, ".job-career {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .job-career--company {\n    color: #333;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .job-career {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .job-career {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
 
 // exports
 
@@ -19740,7 +19743,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".works {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .works--history {\n    color: #C6C9C9;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .works {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .works {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
+exports.push([module.i, ".works {\n  margin-top: 10px;\n  margin-bottom: 30px; }\n  .works--history {\n    color: #333;\n    text-align: center;\n    padding: 3px 0; }\n  @media (min-width: 480px) {\n    .works {\n      font-size: 18px;\n      margin-bottom: 40px; } }\n  @media (min-width: 768px) {\n    .works {\n      font-size: 25px;\n      margin-bottom: 50px; } }\n", ""]);
 
 // exports
 

@@ -31,6 +31,7 @@ module.exports = {
     extensions: ['*', '.js', '.scss']
   },
   devServer: {
-    contentBase: path.join(__dirname)
+    contentBase: path.join(__dirname),
+    port: 3035
   }
 };

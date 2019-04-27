@@ -6,6 +6,9 @@ export class Works extends React.Component {
     return (
       <div className='works'>
         <div className='works--history'>
+          新規事業系プロジェクトマネージャー
+        </div>
+        <div className='works--history'>
           Ruby on Railsで新規事業立ち上げ・開発
         </div>
         <div className='works--history'>

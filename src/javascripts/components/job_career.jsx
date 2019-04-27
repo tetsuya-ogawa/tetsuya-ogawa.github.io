@@ -9,7 +9,7 @@ export class JobCareer extends React.Component {
           株式会社ユニキャスト（Intern）
         </div>
         <div className='job-career--company'>
-          PORT株式会社
+          Web系ITベンチャー企業
         </div>
       </div>
     )
